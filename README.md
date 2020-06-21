@@ -12,19 +12,19 @@ Interaction Modality
 짖기 -> led의 밝기 변화
 두가지 modality를 동시에 (혹은 복합적으로) 전달할 수 있는 방법 탐색
 
-#Pre-requirement
-###HW
+# Pre-requirement
+### HW
 MPU6050
 Feather board - ESP8266
 Sound Sensor(?)
 
-###SW (Library)
+### SW (Library)
 Scikit-learn
 Flask
 
-#System Flow
+# System Flow
 
-#Setup
+# Setup
 
 #Context Mapping
 
