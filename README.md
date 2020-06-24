@@ -14,7 +14,7 @@ Interaction Modality
 두가지 modality를 동시에 (혹은 복합적으로) 전달할 수 있는 방법 탐색
 
 ## Pre-requirement
-### HW
+### Hardware Components
 #### Sensors
 Feather board - ESP8266
 
@@ -28,7 +28,7 @@ LED stripe
 Servo motor
 
 
-### SW (Library)
+### Software (Library)
 Scikit-learn, pandas, numpy, mpu6050-raspberrypi, Flask
 
 
@@ -39,14 +39,17 @@ pip install nose -y
 pip install scikit-learn, flask -y
 ```
 
-
 ## System Flow
 
 ### Context Mapping
 
 ### Data Collection
 
+### KNN Clustering with Moving windows
 
+### Real-Time Classification
+
+### Interaction
 
 ## Reference 
 [1] https://github.com/vijaykumarwalikar/mpu6050-data-recording-visualization-tool
