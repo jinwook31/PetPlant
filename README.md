@@ -1,11 +1,12 @@
 # PetPlant
 
-PetPlant is an @@.
-반려동물의 행동을 실시간으로 감지하고 사용자에게 물리적인 피드백을 제공하는 Home Robot
-
+One-person households desire to raise a pet to overcome loneliness but due to the @@,
 Target: 원격에 있는 동물에 대한 그리움을 느끼는 사람들 
 1인가구로 집을 자주 비우는 사람
 본가에서 멀리 떨어진 곳에서 생활하는 사람
+
+Therefore, PetPlant is an @@.
+반려동물의 행동을 실시간으로 감지하고 사용자에게 물리적인 피드백을 제공하는 Home Robot
 
 Interaction Modality
 꼬리 흔들기 -> 꼬리와 비슷한 움직임
@@ -14,15 +15,29 @@ Interaction Modality
 
 ## Pre-requirement
 ### HW
-MPU6050
+#### Sensors
 Feather board - ESP8266
-Sound Sensor(?)
+
+MPU6050
+
+Grove Sound Sensor(https://wiki.seeedstudio.com/Grove-Sound_Sensor/)
+
+#### Jetbot Side
+LED stripe
+
+Servo motor
+
 
 ### SW (Library)
-Scikit-learn
-Flask
+Scikit-learn, pandas, numpy, mpu6050-raspberrypi, Flask
 
-### Setup
+
+#### Setup
+<pre>
+pip install pandas, numpy, mpu6050-raspberrypi -y
+pip install nose -y
+pip install scikit-learn, flask -y
+<code>
 
 
 ## System Flow
@@ -33,5 +48,5 @@ Flask
 
 
 
-## Reference
-
+## Reference 
+[1] https://github.com/vijaykumarwalikar/mpu6050-data-recording-visualization-tool
