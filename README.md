@@ -44,10 +44,15 @@ pip install scikit-learn, flask -y
 ### Context Mapping
 
 ### Data Collection
+For the data collection, we used an application that receive and store @. <app or code link> csv format
 
 ### KNN Clustering with Moving windows
+3 groups with the windows. However, we didn't scaled with Min-Max, due to the single window input in real-time classification.
 
 ### Real-Time Classification
+For the real-time classifcation, we used Flask server to implement REST API.
+
+run server.py to initate the server that receives data from the sensor.
 
 ### Interaction
 
