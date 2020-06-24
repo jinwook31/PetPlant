@@ -33,11 +33,11 @@ Scikit-learn, pandas, numpy, mpu6050-raspberrypi, Flask
 
 
 #### Setup
-<pre>
+```
 pip install pandas, numpy, mpu6050-raspberrypi -y
 pip install nose -y
 pip install scikit-learn, flask -y
-<code>
+```
 
 
 ## System Flow
