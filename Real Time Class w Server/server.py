@@ -166,7 +166,7 @@ class CreateUser(Resource):
             elif args['type'] == 'VOICE':
                 voiceStatus = voiceClassification(int(args['vc']))    #Voice State Code => 3: none, 5: bark
 
-			#Exicute functions if status are changed
+	    #Exicute functions if status are changed
             status = mpuStatus * voiceStatus  
             if status != currStatus and status > 0:
 		currStatus = status
