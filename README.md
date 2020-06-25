@@ -17,7 +17,8 @@ Grove Sound Sensor(https://wiki.seeedstudio.com/Grove-Sound_Sensor/)
 
 #### Jetbot Side
 Optical fiber
-![](https://ae01.alicdn.com/kf/HTB1MD4_PFXXXXXTaXXXq6xXFXXXD/led.jpg){: width="50%" height="50%"}
+
+![](https://ae01.alicdn.com/kf/HTB1MD4_PFXXXXXTaXXXq6xXFXXXD/led.jpg =100x100)
 
 Servo motor
 
