@@ -43,9 +43,9 @@ pip install scikit-learn, flask -y
 ## System Flow
 
 ### Data Collection
-For the data collection to develop an KNN model, we used an application that receive and store the data. 
-You could launch the application by @ the ./@@ with @. 
-It save the data and export it into a csv format.
+For the data collection to develop an KNN model, we used MPU6050 and Grove sound sensor and uploaded to an application that receive and store the data. 
+Codes for the feather board (ESP8266), which sends the data to application, is in both './Sensor/gyro_toPythonServer' and './Sensor/sound_toPythonServer' folder.
+Also, you could launch the application by @ the '' with @. The application save the data and export it into a csv format.
 
 [img]
 ![]()
@@ -57,9 +57,9 @@ After the data collection, we classified the data into 3 groups. We used time-do
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/clustering%20result.PNG)
 
 ### Real-Time Classification
-For the real-time classifcation, we used Flask server to implement REST API.
+For the real-time classifcation, we used the Flask server to implement REST API. As we send the data from the feather board to application in data collection, we changed the ip address to the jetbot and send an json format data to the Flask server.
 
-run server.py to initate the server that receives data from the sensor.
+You could run the server by  <pre> python3 server.py <code> to initate the server that receives data from the sensor and make it as an time-domain scaled window. It classify the status with the KNN model generated previously(shake_classification.pkl) and provide and interaction with manipulating servo moter and LED.
 
 ### Interaction
 Bark to LED, tail shaking to servo movement
