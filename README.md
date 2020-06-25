@@ -41,8 +41,6 @@ pip install scikit-learn, flask -y
 
 ## System Flow
 
-### Context Mapping
-
 ### Data Collection
 For the data collection, we used an application that receive and store @. <app or code link> csv format
 
@@ -55,6 +53,7 @@ For the real-time classifcation, we used Flask server to implement REST API.
 run server.py to initate the server that receives data from the sensor.
 
 ### Interaction
+Bark to LED, tail shaking to servo movement
 
 ## Reference 
 [1] https://github.com/vijaykumarwalikar/mpu6050-data-recording-visualization-tool
