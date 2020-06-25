@@ -9,7 +9,7 @@ video
 ## Pre-requirement
 ### Hardware Components
 #### Sensors
-Feather board - ESP8266
+Feather board (ESP8266)
 
 MPU6050
 
@@ -53,7 +53,6 @@ Also, you could launch the application by @ the '' with @. The application save 
 ### KNN Clustering with Moving windows
 After the data collection, we classified the data into 3 groups. We used time-domain scaled with the stacked moving windows. However, we didn't scaled the time-domain scaled data with Min-Max, due to the single window input in real-time classification. As shown in the figure, it classifies 3 groups well and for the real-time data too.
 
-[img]
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/clustering%20result.PNG)
 
 ### Real-Time Classification
