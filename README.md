@@ -51,14 +51,16 @@ Also, you could launch the application by @ the '' with @. The application save 
 ![]()
 
 ### KNN Clustering with Moving windows
-After the data collection, we classified the data into 3 groups. We used time-domain scaled with the stacked moving windows. However, we didn't scaled the time-domain scaled data with Min-Max, due to the single window input in real-time classification. As shown in the figure, it classifies 3 groups well and for the real-time data too.
+After the data collection, we classified the data into 3 groups. From other MPU library that supports recoding [1], you could build your own model by using `python3 ./KNN_MPU/knnClassificaition.py` and `python3 ./KNN_MPU/realTime (Direct Connection).py` to test the real-time data on the model in local environment. 
+
+We used time-domain scaled with the stacked moving windows. However, we didn't scaled the time-domain scaled data with Min-Max, due to the single window input in real-time classification. As shown in the figure, it classifies 3 groups well and for the real-time data too.
 
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/clustering%20result.PNG)
 
 ### Real-Time Classification
 For the real-time classifcation, we used the Flask server to implement REST API. As we send the data from the feather board to application in data collection, we changed the ip address to the jetbot and send an json format data to the Flask server.
 
-You could run the server by `python3 server.py` to initate the server that receives data from the sensor and make it as an time-domain scaled window. It classify the status with the KNN model generated previously(shake_classification.pkl) and provide and interaction with manipulating servo moter and LED.
+You could run the server by `python3 ./Real Time Class w Server/server.py` to initate the server that receives data from the sensor and make it as an time-domain scaled window. It classify the status with the KNN model generated previously(shake_classification.pkl) and provide and interaction with manipulating servo moter and LED.
 
 ### Interaction
 For the interaction, there are total 6 combination (2 led x 3 servo movement). LED represents the voice and servo movement represents the pet tail movement.
