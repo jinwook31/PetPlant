@@ -169,6 +169,7 @@ class CreateUser(Resource):
 			#Exicute functions if status are changed
             status = mpuStatus * voiceStatus  
             if status != currStatus and status > 0:
+		currStatus = status
                 if status == 5:         #Bark + Still
                     setLED(GPIO.HIGH)
                 elif status == 10:      #Bark + Wave
