@@ -15,7 +15,6 @@ MPU6050
 
 Grove Sound Sensor(https://wiki.seeedstudio.com/Grove-Sound_Sensor/)
 
-[img]
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/sensor%20image.PNG)
 
 #### Jetbot Side
@@ -45,9 +44,8 @@ pip install scikit-learn, flask -y
 ### Data Collection
 For the data collection to develop an KNN model, we used MPU6050 and Grove sound sensor and uploaded to an application that receive and store the data. 
 Codes for the feather board (ESP8266), which sends the data to application, is in both `./Sensor/gyro_toPythonServer` and `./Sensor/sound_toPythonServer` folder.
-Also, you could launch the application by @ the '' with @. The application save the data and export it into a csv format.
+Also, you could launch the web application by running the `df` with the HTML web server. The application helps you to save the data and export it into a csv format.
 
-[img]
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/application%20image.PNG)
 
 ### KNN Clustering with Moving windows
