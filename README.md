@@ -16,7 +16,7 @@ MPU6050
 Grove Sound Sensor(https://wiki.seeedstudio.com/Grove-Sound_Sensor/)
 
 [img]
-![]()
+![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/sensor%20image.PNG)
 
 #### Jetbot Side
 Optical fiber
@@ -48,7 +48,7 @@ Codes for the feather board (ESP8266), which sends the data to application, is i
 Also, you could launch the application by @ the '' with @. The application save the data and export it into a csv format.
 
 [img]
-![]()
+![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/application%20image.PNG)
 
 ### KNN Clustering with Moving windows
 After the data collection, we classified the data into 3 groups. From other MPU library that supports recoding [1], you could build your own model by using `python3 ./KNN_MPU/knnClassificaition.py` and `python3 ./KNN_MPU/realTime (Direct Connection).py` to test the real-time data on the model in local environment. 
