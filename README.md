@@ -58,6 +58,8 @@ We used time-domain scaled with the stacked moving windows. However, we didn't s
 ### Real-Time Classification
 The overall aglorithm for real-time / Queue
 
+![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/Queue.JPG)
+
 For the real-time classifcation, we used the Flask server to implement REST API. As we send the data from the feather board to application in data collection, we changed the ip address to the jetbot and send an json format data to the Flask server.
 
 You could run the server by `python3 ./Real Time Class w Server/server.py` to initate the server that receives data from the sensor and make it as an time-domain scaled window. It classify the status with the KNN model generated previously(shake_classification.pkl) and provide and interaction with manipulating servo moter and LED.
