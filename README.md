@@ -56,7 +56,7 @@ We used time-domain scaled with the stacked moving windows. However, we didn't s
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/clustering%20result.PNG)
 
 ### Real-Time Classification
-The overall aglorithm for real-time uses queue. As the figure below, it gets 1 input and check the status when the queue contatins @@ lenght of data. After classification, it reacts depending on the result and removes oldest 2 data from the queue.
+The overall aglorithm for real-time uses queue. As the figure below, it gets 1 input and check the status when the queue contatins proper lenght of data. After classification, it reacts depending on the result and removes oldest 2 data from the queue.
 
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/Queue.JPG)
 
