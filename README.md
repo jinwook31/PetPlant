@@ -1,7 +1,9 @@
 # PetPlant
 
-One-person households desire to raise a pet to relief loneliness, but due to the busy lift, they leave their house for long time.
-This could cause problem to pet such as separation anxiety.
+As the number of one-person households is increasing, some are experiencing psychological issues such as depression, loneliness, and lack of social interaction. They are trying to address these issues through raising pets, as studies have shown that doing so may be helpful in dealing with such problems. However, there are many reason that people can’t spend their time with their pet allday, such as life pattern, work, school. Therefore there is a clear needs that they want to know how their pets are doing while they are out.
+
+However, most of the IoT products for pet care are based on a built-in camera to let users monitor their pet. The built-in cameras have caused various issues related to privacy concerns and lack of awareness of the system presence, which leads to anxiety and discontinued usage of the product. One of the comments with this was that they ‘pull the IoT camera plug off when they arrive home’, due to the sense of someone might watch the video.
+
 Therefore, PetPlant provides an pet's status and context by mapping it to a artificial plant.
 
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/final%20image.PNG)
