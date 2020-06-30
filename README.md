@@ -4,7 +4,7 @@ One-person households desire to raise a pet to relief loneliness, but due to the
 This could cause problem to pet such as separation anxiety.
 Therefore, PetPlant provides an pet's status and context by mapping it to a artificial plant.
 
-video
+![](https://youtu.be/gazP7-wU-lU)
 
 ## Pre-requirement
 ### Hardware Components
@@ -26,8 +26,7 @@ LED (any color is fine!)
 
 3D printed components and pot
 
-[img]
-![]()
+![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/structure.PNG)
 
 ### Software (Library)
 Scikit-learn, pandas, numpy, mpu6050-raspberrypi, Flask
