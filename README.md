@@ -4,7 +4,7 @@ As the number of one-person households is increasing, some are experiencing psyc
 
 However, most of the IoT products for pet care are based on a built-in camera to let users monitor their pet. The built-in cameras have caused various issues related to privacy concerns and lack of awareness of the system presence, which leads to anxiety and discontinued usage of the product. One of the comments with this was that they ‘pull the IoT camera plug off when they arrive home’, due to the sense of someone might watch the video.
 
-Therefore, PetPlant provides an pet's status and context by mapping it to a artificial plant.
+Therefore, PetPlant provides an pet's status and context by mapping it into a artificial plant.
 
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/final%20image.PNG)
 
