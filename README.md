@@ -8,7 +8,7 @@ Therefore, PetPlant provides an pet's status and context by mapping it into a ar
 
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/final%20image.PNG)
 
-Demo Link: https://youtu.be/gazP7-wU-lU
+Demo Link: https://youtu.be/UauxqAE8PQg
 
 ## Pre-requirement
 ### Hardware Components
