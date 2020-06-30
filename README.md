@@ -4,7 +4,9 @@ One-person households desire to raise a pet to relief loneliness, but due to the
 This could cause problem to pet such as separation anxiety.
 Therefore, PetPlant provides an pet's status and context by mapping it to a artificial plant.
 
-![](https://youtu.be/gazP7-wU-lU)
+![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/final%20image.PNG)
+
+Demo Link: https://youtu.be/gazP7-wU-lU
 
 ## Pre-requirement
 ### Hardware Components
