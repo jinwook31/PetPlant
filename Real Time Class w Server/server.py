@@ -105,7 +105,7 @@ def MPUClassification(gyr):
         window = timedomain_scaled(data, index)
                 
         predict = pickle_model.predict(window.drop(columns=['timestamp']))
-        # print(predict[0])  #0: hold, 1: flip, 2: Shake
+        # print(predict[0])  #0: hold, 1: wave, 2: Shake
 		# The order might change if you make new model (.pkl).
         
         #Moving window
