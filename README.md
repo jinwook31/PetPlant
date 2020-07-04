@@ -49,19 +49,19 @@ pip install scikit-learn, flask -y
 ### Data Collection
 For the data collection to develop a KNN model, we used the MPU6050 and Grove sound sensor and uploaded it to an application that receives and stores the data. 
 Codes for the feather board (ESP8266), which sends the data to application, is in both `./Sensor/gyro_toPythonServer` and `./Sensor/sound_toPythonServer` folder.
-Also, you could launch the web application by running the `df` with the HTML web server. The application helps you to save the data and export it into a CSV format.
+Also, you could launch the web application by running the `./Data Collection_Web Server/index.html` with the HTML web server. The application helps you to save the data and export it into a CSV format.
 
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/application%20image.PNG)
 
 ### KNN Clustering with Moving windows
-After the data collection, we classified the data into 3 groups. From other MPU library that supports recoding [1], you could build your model by using `python3 ./KNN_MPU/knnClassificaition.py` and `python3 ./KNN_MPU/realTime (Direct Connection).py` to test the real-time data on the model in the local environment. 
+After the data collection (`./KNN_MPU/gyro.csv` in this project), we classified the data into 3 groups (i.e., hold, wave, shake) by using KNN Clustering. We used time-domain scaled for each time term windows of collected data and stacked into data list. However, we didn't scale the time-domain scaled data with Min-Max, due to the single window input in real-time classification. We used `from sklearn.cluster import KMeans` to build the KNN model and run `model.fit()` with the scaled data list. As shown in the figure, it classifies 3 groups well and for the real-time data too.
 
-We used time-domain scaled with the stacked moving windows. However, we didn't scale the time-domain scaled data with Min-Max, due to the single window input in real-time classification. As shown in the figure, it classifies 3 groups well and for the real-time data too.
+From other MPU library that supports recoding [1], you could build your model by using `python3 ./KNN_MPU/knnClassificaition.py` and `python3 ./KNN_MPU/realTime (Direct Connection).py` to test the real-time data on the model in the local environment.
 
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/clustering%20result.PNG)
 
 ### Real-Time Classification
-The overall algorithm for real-time uses queue. As the figure below, it gets 1 input and checks the status when the queue contains the proper length of data. After classification, it reacts depending on the result and removes the oldest 2 data from the queue.
+The overall algorithm for real-time classification uses queue. As the figure below, the `getRealTimeData` function in `Server/server.py` makes the queue to get 1 real-time input per loop and checks the status when the queue contains the proper length (in this code: 6) of data by using `model.predict()`. The model in this code is generated from the `./KNN_MPU/knnClassificaition.py`. After classification, it reacts depending on the result and removes the oldest 2 data from the queue to get new real-time data.
 
 ![](https://raw.githubusercontent.com/jinwook31/PetPlant/master/Queue.JPG)
 
