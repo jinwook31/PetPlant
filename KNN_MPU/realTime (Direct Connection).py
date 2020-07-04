@@ -99,7 +99,7 @@ def main():
             #print(window)
             
             predict = pickle_model.predict(window.drop(columns=['timestamp']))
-            print(predict[0])  #0: , 1: hold, 2:
+            print(predict[0])
             
             #Moving window
             data.drop(data.head(2).index, inplace=True)
