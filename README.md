@@ -10,6 +10,8 @@ Therefore, PetPlant provides a pet's status and context by mapping it into an ar
 
 Demo Link: https://youtu.be/UauxqAE8PQg
 
+Presentation Slide Link: https://docs.google.com/presentation/d/1-Bml_lIzRBmbYameWIaAGRMfbRswZ7_QlEy3a5eEQT4/edit?usp=sharing
+
 ## Pre-requirement
 ### Hardware Components
 #### Sensors
